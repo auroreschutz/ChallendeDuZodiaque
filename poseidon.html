@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges de Poseidon</title>
+    <link rel="icon" type="image/png" href="img/poseidon/trident.png" />
+    <link rel="stylesheet" href="stylewater.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid p-1">
+    <main class="test row mx-lg-5 my-1 mx-md-0 mx-xs-0">
+
+        <!-- Accordion -->
+        <div class="accordion d-lg-none" id="accordionMenu">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h1>Challenges de Poseidon</h1>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionMenu">
+                    <div class="accordion-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="etapes col-lg-7 col-md-12 col-xs-12 m-0">
+            <div id="board">
+                <!-- 12 cases -->
+                <div class="case" style="background-image: url();"><img src="img/poseidon/bubbles.png" class="case-image"
+                        alt="bubbles" style="max-width: 50px;">
+                    <div class="case-content" id="case1"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/coral.png" class="case-image"
+                        alt="coral" style="max-width: 50px;">
+                    <div class="case-content" id="case2"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/shrimp.png" class="case-image"
+                        alt="shrimp" style="max-width: 50px;">
+                    <div class="case-content" id="case3"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/blowfish.png" class="case-image"
+                        alt="blowfish" style="max-width: 50px;">
+                    <div class="case-content" id="case4"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/crab.png" class="case-image" alt="crab"
+                        style="max-width: 50px;">
+                    <div class="case-content" id="case5"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/dolphin.png" class="case-image"
+                        alt="dolphin" style="max-width: 50px;">
+                    <div class="case-content" id="case6"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/jellyfish.png" class="case-image"
+                        alt="jellyfish" style="max-width: 50px;">
+                    <div class="case-content" id="case7"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/shark.png" class="case-image"
+                        alt="shark" style="max-width: 50px;">
+                    <div class="case-content" id="case8"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/tropicalfish.png" class="case-image"
+                        alt="tropicalfish" style="max-width: 50px;">
+                    <div class="case-content" id="case9"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/shell.png" class="case-image"
+                        alt="shell" style="max-width: 50px;">
+                    <div class="case-content" id="case10"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/whale.png" class="case-image"
+                        alt="whale" style="max-width: 50px;">
+                    <div class="case-content" id="case11"></div>
+                </div>
+                <div class="case" style="background-image: url();"><img src="img/poseidon/wave.png" class="case-image"
+                        alt="wave" style="max-width: 50px;">
+                    <div class="case-content" id="case12"></div>
+                </div>
+            </div>
+        </section>
+        <section class="stats col-lg-5 col-md-2 col-xs-2 m-0 mt-1 p-5">
+            <div class="container desktopview">
+                <h1 class="h1t sp-1 mb-4">Challenges de Poseidon</h1>
+                <div class="buttonpages">
+                    <a class="m-1 btn inactive-button" href="index.html">Artistes</a>
+                    <a class="m-1 btn active-button">Écrivains</a>
+                    <a class="m-1 btn inactive-button" href="univers.html">Univers</a>
+                </div>
+                <div class="participants">
+                    <h2 class="m-3">Participants</h2>
+                    <div id="participants" class="userscadre"></div>
+                </div>
+                <br>
+                <button class="m-3 btn active-button signupbutton">S'inscrire</button>
+                    <button class="m-3 btn inactive-button loginbutton">Se connecter</button>
+                <div id="signup" class="signupD">
+                    <h2 class="m-3">S'inscrire</h2>
+                    <form id="signup-form">
+                        <input class="m-1 sign" type="text" id="username" placeholder="Pseudo" required>
+                        <input class="m-1" type="file" id="pawn-image" accept="image/*" required>
+                        <button class="m-1 sign" type="submit">S'inscrire</button>
+                    </form>
+                </div>
+                    <div id="login" class="loginD">
+                    <h2 class="m-3">Se connecter</h2>
+                    <form id="login-form">
+                        <input class="m-1 sign" type="text" id="login-username" placeholder="Pseudo" required>
+                        <button class="m-1 sign" type="submit">Connexion</button>
+                    </form>
+                    <div id="current-user">
+                        <p>You are logged in as: <span id="logged-in-user"></span></p>
+                    </div>
+                </div>
+
+                <h2 class="m-3">Challenges</h2>
+                <div id="steps" class="artistsDiv">
+                    <ol>
+                        <li><input type="checkbox" class="step" data-step="1"> <strong>Remake :</strong> <small class="desc"> Réécrire une vieille scène</small></li>
+                        <li><input type="checkbox" class="step" data-step="2"> <strong>Art-Trade :</strong> <small class="desc">Faire un art-trade ou request avec un membre</small></li>
+                        <li><input type="checkbox" class="step" data-step="3"> <strong>WIP :</strong> <small class="desc">Terminer un vieux WIP</small></li>
+                        <li><input type="checkbox" class="step" data-step="4"> <strong>Love :</strong> <small class="desc">Écrire une scène de premier baiser</small></li>
+                        <li><input type="checkbox" class="step" data-step="5"> <strong>Multi :</strong> <small class="desc">Écrire une scène humoristique avec minimum trois personnages</small></li>
+                        <li><input type="checkbox" class="step" data-step="6"> <strong>Dynamique :</strong>  <small class="desc">Écrire une scène de course poursuite ou de combat</small></li>
+                        <li><input type="checkbox" class="step" data-step="7"> <strong>Contemplatif :</strong> <small class="desc">Écrire une scène de description de lieu ou paysage</small></li>
+                        <li><input type="checkbox" class="step" data-step="8"> <strong>Poème :</strong> <small class="desc">Écrire un poème</small></li>
+                        <li><input type="checkbox" class="step" data-step="9"> <strong>Inversion :</strong> <small class="desc">Si vous écrivez habituellement à la première personne, écrivez à la troisième, et inversement</small></li>
+                        <li><input type="checkbox" class="step" data-step="10"> <strong>Dessin :</strong> <small class="desc">Faites un dessin d’un de vos OC</small></li>
+                        <li><input type="checkbox" class="step" data-step="11"> <strong>Limitation :</strong> <small class="desc">Écrire une histoire courte en 500 mots</small></li>
+                        <li><input type="checkbox" class="step" data-step="12"> <strong>Non-humain :</strong> <small class="desc">Écrire une scène avec un animal, et inversement pour ceux qui font principalement des animaux</small></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal" tabindex="-1" id="stats-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Stats</h5>
+                    <button type="button" class="btn-close close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="stats"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const signupbutton = document.querySelector('.signupbutton');
+          const loginbutton = document.querySelector('.loginbutton');
+          const signupD = document.querySelector('.signupD');
+          const loginD = document.querySelector('.loginD');
+    
+          function showSignUp() {
+            signupD.style.display = 'block';
+            loginD.style.display = 'none';
+            signupbutton.classList.add('active-button');
+            signupbutton.classList.remove('inactive-button');
+            loginbutton.classList.remove('active-button');
+            loginbutton.classList.add('inactive-button');
+          }
+    
+          function showLogIn() {
+            loginD.style.display = 'block';
+            signupD.style.display = 'none';
+            loginbutton.classList.add('active-button');
+            loginbutton.classList.remove('inactive-button');
+            signupbutton.classList.remove('active-button');
+            signupbutton.classList.add('inactive-button');
+          }
+    
+          signupbutton.addEventListener('click', showSignUp);
+          loginbutton.addEventListener('click', showLogIn);
+    
+          showSignUp();
+        });
+      </script>
+
+</body>
+
+</html>
