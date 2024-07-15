@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentUser = null;
   const serverUrl = 'http://localhost:3000/'; 
 
+   // save & stockage (not working ?)
+
   function saveUsers() {
       fetch(`${serverUrl}/api/users`, {
           method: 'POST',
@@ -41,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
           .catch(error => console.error('Error loading users:', error));
   }
 
+  // responsive (stats col to accordion)
+
   function moveStatsToAccordion() {
       if (window.innerWidth <= 991) {
           if (statsSection && !accordionBody.contains(statsSection)) {
@@ -56,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   moveStatsToAccordion();
   window.addEventListener('resize', moveStatsToAccordion);
+
+  // signup
 
   signupForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -81,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
+  // login
+
   loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const username = document.getElementById('login-username').value;
@@ -93,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
           alert('User not found!');
       }
   });
+
+  // placement pions
 
   steps.forEach(step => {
       step.addEventListener('change', (e) => {
@@ -167,6 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   }
 
+  // stats overlay
+
   function showStats(e) {
       const username = e.target.dataset.username;
       const user = users.find(u => u.name === username);
@@ -181,6 +193,8 @@ document.addEventListener('DOMContentLoaded', () => {
           modal.style.display = 'block';
       }
   }
+
+  // completion stars
 
   function setCompletedAppearance(user, pawn = null) {
       if (!pawn) {
@@ -204,6 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       }
   }
+
+  // modal
 
   closeModal.addEventListener('click', () => {
       modal.style.display = 'none';
