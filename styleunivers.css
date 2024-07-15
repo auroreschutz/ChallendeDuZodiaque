@@ -14,7 +14,8 @@ body {
   max-width: 2000px;
   margin: auto;
   background-color: #0a1121;
-  background: url(img/starbg.jpg) repeat;
+  background: url(img/univers/hell.webp) no-repeat;
+  background-size: cover;
   color: var(--colorBody) !important;
 }
 

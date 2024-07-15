@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let users = [];
   let currentUser = null;
-  const serverUrl = 'https://challengezodiaque.vercel.app'; // Since we are hosting on Vercel, the base URL will be relative
+  const serverUrl = 'http://localhost:3000/'; 
 
   function saveUsers() {
       fetch(`${serverUrl}/api/users`, {
