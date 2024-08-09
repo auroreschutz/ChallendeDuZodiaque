@@ -14,7 +14,7 @@ body {
   max-width: 2000px;
   margin: auto;
   background-color: #0a1121;
-  background: url(img/starbg.jpg) repeat;
+  background: url(img/starbg.webp) repeat;
   color: var(--colorBody) !important;
 }
 
