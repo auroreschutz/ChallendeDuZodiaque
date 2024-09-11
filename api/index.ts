@@ -6,7 +6,7 @@ import path from 'path';
 
 const app = express();
 const PORT = process.env.PORT || 3000; 
-const DATA_FILE = path.join(process.cwd(), 'api', 'users.json');
+const DATA_FILE = path.join(process.cwd(), 'api', 'data.json');
 
 app.use(bodyParser.json());
 app.use(cors());

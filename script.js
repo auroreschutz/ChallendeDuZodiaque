@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let users = [];
   let currentUser = null;
-  const serverUrl = 'http://localhost:3000/'; 
+  const serverUrl = 'https://challengezodiaque.vercel.app'; 
 
    // save & stockage (not working ?)
 
   function saveUsers() {
-      fetch(`${serverUrl}/api/users`, {
+      fetch(`/api/users`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
