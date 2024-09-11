@@ -5,8 +5,18 @@
   --fondStatsCases: rgba(255, 255, 255, 0.075);
   --borders: rgba(255, 255, 255, 0.144);
   --colorBodyFull: white;
-  --bgBodyAccordion: #111b33;
+  --bgBodyAccordion: #151719;
   scroll-behavior: smooth;
+}
+
+html {
+  background: url(img/univers/hell.webp) repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--colorBody) !important;
 }
 
 body {
@@ -81,6 +91,7 @@ h2 {
 .etapes {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .case {

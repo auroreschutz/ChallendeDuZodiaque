@@ -5,7 +5,7 @@
   --fondStatsCases: rgba(18, 32, 32, 0.247);
   --borders: rgba(255, 255, 255, 0.144);
   --colorBodyFull: white;
-  --bgBodyAccordion: #111b33;
+  --bgBodyAccordion: #24809f;
   scroll-behavior: smooth;
 }
 
@@ -15,6 +15,11 @@ body {
   margin: auto;
   background-color: #0a1121;
   background: url(img/poseidon/underwater.webp) repeat;
+  color: var(--colorBody) !important;
+}
+
+a {
+  text-decoration: none !important;
   color: var(--colorBody) !important;
 }
 
@@ -80,6 +85,7 @@ h2 {
 .etapes {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .case {
